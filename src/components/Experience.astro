@@ -1,0 +1,29 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Actualmente...",
+    title: "Desarrollador FullStack",
+    company: "Municipalidad de Mendoza",
+    description:
+      " Trabajo como desarrollador Full Stack para el área de Desarrollo y Sistemas, donde utilizo Java y Spring Boot de manera experta en mis responsabilidades como programador, también utilizamos React, NodeJS, MySQL, MongoDB y Linux. Esta experiencia me brindó la oportunidad de fortalecer y enriquecer mis habilidades en Java y Spring Boot, contribuyendo significativamente a mi desarrollo profesional en el campo de la programación.",
+  },
+  {
+    date: "Enero 2022",
+    title: "Maestro/Tutor Java",
+    company: "Egg Cooperation",
+    description:
+      "Formar parte de las tutorías me permitieron desarrollar mis Softskill y entender la importancia de la cooperación. Poder contribuir a la comunidad Egg como maestro fue muy satisfactorio. Este rol surgió a raíz de mis previos conocimientos en programación y mi desempeño durante el cursado. Encontré un espacio de auto conocimiento y de ayuda para con mis pares.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>

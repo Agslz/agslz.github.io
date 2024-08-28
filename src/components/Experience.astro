@@ -1,28 +1,36 @@
 ---
 import ExperienceItem from "./ExperienceItem.astro"
-const EXPERIENCIE = [
+const EXPERIENCE = [
   {
     date: "Actualmente...",
-    title: "Desarrollador FullStack",
-    company: "Municipalidad de Mendoza",
+    title: "Desarrollador Full Stack",
+    company: "Municipalidad de Capital de Mendoza",
     description:
-      " Trabajo como desarrollador Full Stack para el área de Desarrollo y Sistemas, donde utilizo Java y Spring Boot de manera experta en mis responsabilidades como programador, también utilizamos React, NodeJS, MySQL, MongoDB y Linux. Esta experiencia me brindó la oportunidad de fortalecer y enriquecer mis habilidades en Java y Spring Boot, contribuyendo significativamente a mi desarrollo profesional en el campo de la programación.",
+      "Trabajo como desarrollador Full Stack para el área de Desarrollo y Sistemas, donde utilizo Java y Spring Boot de manera experta en mis responsabilidades como programador, también utilizamos React, NodeJS, MySQL, MongoDB y Linux. Esta experiencia me brindó la oportunidad de fortalecer y enriquecer mis habilidades en Java y Spring Boot, contribuyendo significativamente a mi desarrollo profesional en el campo de la programación.",
+    //link: "Link sobre el trabajo",
   },
   {
-    date: "Enero 2022",
-    title: "Maestro/Tutor Java",
+    date: "Enero 2022 - Abril 2023",
+    title: "Maestro/Tutor Backend",
     company: "Egg Cooperation",
     description:
-      "Formar parte de las tutorías me permitieron desarrollar mis Softskill y entender la importancia de la cooperación. Poder contribuir a la comunidad Egg como maestro fue muy satisfactorio. Este rol surgió a raíz de mis previos conocimientos en programación y mi desempeño durante el cursado. Encontré un espacio de auto conocimiento y de ayuda para con mis pares.",
+      "Formar parte de las tutorías me permitieron desarrollar mis Softskill y entender la importancia de la cooperación. Poder contribuir a la comunidad Egg como maestro fue muy satisfactorio. Este rol surgió a raíz de mis previos conocimientos en programación y mi desempeño durante el cursado. Encontré un espacio de auto conocimiento y de ayuda para con mis pares..",
+  },
+  {
+    date: "Mayo 2022 - Diciembre 2022",
+    title: "Trainee Developer",
+    company: "LabsXD",
+    description:
+      "Desarrollador Trainee en LabsXD, con experiencia en el manejo de tecnologías de Salesforce y sus complementos. También participé en proyectos de frontend, lo que me permitió ampliar mis conocimientos en desarrollo web y en la integración de soluciones tecnológicas.",
   },
 ]
 ---
 
 <ol class="relative mt-16">
   {
-    EXPERIENCIE.map((experiencie) => (
+    EXPERIENCE.map((experience) => (
       <li class="">
-        <ExperienceItem {...experiencie} />
+        <ExperienceItem {...experience} />
       </li>
     ))
   }

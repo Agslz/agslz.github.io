@@ -2,20 +2,15 @@
 const currentYear = new Date().getFullYear()
 ---
 
-<footer
-  class="opacity-80 mt-16 w-full container mb-10 flex justify-center w-full"
->
-  <div
-    class="rounded-lg w-full max-w-screen-xl mx-auto md:flex md:items-center md:justify-between px-4 py-4"
-  >
-    <span class="text-sm sm:text-center text-zinc-800/90 dark:text-zinc-200/90"
-      >© {currentYear}
+<footer class="opacity-80 mt-16 mb-10 w-full flex justify-center">
+  <div class="rounded-lg max-w-screen-xl mx-auto px-4 py-4 flex flex-col items-center">
+    <span class="text-sm text-zinc-800/90 dark:text-zinc-200/90 text-center">
+      © {currentYear}
       <a href="https://www.linkedin.com/in/agustin-schulze/" target="_blank" class="hover:underline">Agustin Schulze</a>. Casi
       todos los derechos reservados
     </span>
-    <ul
-      class="flex flex-wrap items-center mt-3 text-sm font-medium dark:text-white/90 sm:mt-0"
-    >
+    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium dark:text-white/90">
+      <!-- Aquí puedes agregar enlaces u otros elementos si lo necesitas -->
     </ul>
   </div>
 </footer>

@@ -1,11 +1,11 @@
 ---
 import GitHub from "./icons/GitHub.astro"
 import NextJS from "./icons/NextJS.astro"
-import Tailwind from "./icons/Tailwind.astro"
+import Tailwind from "./icons/Tailwind.astro" //Primero importar los iconos desde la carpeta de icons
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 
-const TAGS = {
+const TAGS = { 
   NEXT: {
     name: "Next.js",
     class: "bg-black text-white",
@@ -16,31 +16,73 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: Tailwind,
   },
-}
-const PROJECTS = [
+};
+
+const PROJECTS = [ 
   {
-    title: "SVGL - A beautiful library with SVG logos",
+    title: "Arreglalo Ya",
     description:
-      "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://svgl.vercel.app/",
+      "Aplicación para contratar servicios de reparación en el hogar. Los usuarios pueden iniciar sesión con un formulario o su cuenta de Google. Una vez dentro, pueden buscar y filtrar proveedores según profesión, puntuación o nombre para encontrar el servicio adecuado.",
     github: "https://github.com/pheralb/svgl",
-    image: "/projects/svgl.webp",
+    image: "/projects/adventjs.webp",
+    link:"",
     tags: [TAGS.NEXT, TAGS.TAILWIND],
   },
   {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
+    title: "BiblioNet",
     description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://adventjs.dev",
+      "Plataforma integral que permite gestionar colecciones de libros y conectar a lectores. Los usuarios pueden crear, actualizar, prestar y devolver libros, interactuar con sus bibliotecas personales y compartir sus experiencias de lectura en una comunidad.",
+    github: "https://github.com/pheralb/svgl",
     image: "/projects/adventjs.webp",
     tags: [TAGS.NEXT, TAGS.TAILWIND],
   },
-]
+  {
+    title: "Java Microservicios",
+    description:
+      "Aplicación que gestiona usuarios utilizando OAuth2 y JWT para la autenticación. Incluye servidores de configuración con Spring Cloud, balanceo de carga, tolerancia a fallos con Resilience4J y rastreo distribuido con Spring Cloud Sleuth. Todo está preparado para automatización y despliegue en contenedores Docker.",
+    github: "https://github.com/pheralb/svgl",
+    image: "/projects/adventjs.webp",
+    tags: [TAGS.NEXT, TAGS.TAILWIND],
+  },
+  {
+    title: "Ecommerce Microservicios",
+    description:
+      "Aplicación de e-commerce desarrollada con microservicios y Docker para facilitar el despliegue. Implementa Keycloak para gestionar la autenticación de usuarios, Resilience4j para garantizar la tolerancia a fallos y Zipkin para el monitoreo de las solicitudes a través de los microservicios.",
+    github: "https://github.com/pheralb/svgl",
+    image: "/projects/adventjs.webp",
+    tags: [TAGS.NEXT, TAGS.TAILWIND],
+  },
+  {
+    title: "Control de Clientes",
+    description:
+      "Aplicación corporativa diseñada para gestionar clientes con un sistema de Login que utiliza Spring Security y roles de usuario. Está internacionalizada en 4 idiomas, incluye un dashboard para ver saldos de clientes y es completamente responsiva, adaptándose a cualquier dispositivo.",
+    github: "https://github.com/pheralb/svgl",
+    image: "/projects/adventjs.webp",
+    tags: [TAGS.NEXT, TAGS.TAILWIND],
+  },
+  {
+    title: "Control de Inventario",
+    description:
+      "Sistema de control de inventario basado en MySQL, con servicios RESTful que devuelven datos en formato JSON. La autenticación se maneja a través de Keycloak en contenedores Docker, asegurando una capa de seguridad robusta. La aplicación ha sido desplegada exitosamente en Google Cloud Platform.",
+    github: "https://github.com/pheralb/svgl",
+    image: "/projects/adventjs.webp",
+    tags: [TAGS.NEXT, TAGS.TAILWIND],
+  },
+  {
+    title: "Chat en tiempo real",
+    description:
+      "Aplicación de chat en tiempo real con una arquitectura modular. Utiliza websockets para la comunicación instantánea y está desarrollada con Spring Boot. El frontend es completamente responsive, y la aplicación está dockerizada para facilitar su despliegue en diferentes entornos.",
+    github: "https://github.com/pheralb/svgl",
+    image: "/projects/adventjs.webp",
+    tags: [TAGS.NEXT, TAGS.TAILWIND],
+  },
+];
+
 ---
 
 <div class="flex flex-col gap-y-16">
   {
-    PROJECTS.map(({ image, title, description, tags, link, github }) => (
+    PROJECTS.map(({ image, title, description, tags, link, github }) => ( //link
     <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
   <div class="w-full md:w-1/2">
     <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">

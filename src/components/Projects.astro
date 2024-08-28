@@ -1,21 +1,125 @@
 ---
 import GitHub from "./icons/GitHub.astro"
-import NextJS from "./icons/NextJS.astro"
-import Tailwind from "./icons/Tailwind.astro" //Primero importar los iconos desde la carpeta de icons
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
+import Spring from "./icons/Spring.astro";
+import Java from "./icons/Java.astro";
+import Javascript from "./icons/Javascript.astro";
+import Angular from "./icons/Angular.astro";
+import Bootstrap from "./icons/Bootstrap.astro";
+import Css from "./icons/Css.astro";
+import Html from "./icons/Html.astro";
+import Docker from "./icons/Docker.astro";
+import GoogleCloud from "./icons/GoogleCloud.astro";
+import Grafana from "./icons/Grafana.astro";
+import Jwt from "./icons/Jwt.astro";
+import Mongo from "./icons/Mongo.astro";
+import MySQL from "./icons/MySQL.astro";
+import Postgre from "./icons/Postgre.astro";
+import Swagger from "./icons/Swagger.astro";
+import Keycloak from "./icons/Keycloak.astro"
+import SpringCloud from "./icons/SpringCloud.astro"
+import NetflixZuul from "./icons/NetflixZuul.astro"
+import SpringSecurity from "./icons/SpringSecurity.astro"
 
-const TAGS = { 
-  NEXT: {
-    name: "Next.js",
-    class: "bg-black text-white",
-    icon: NextJS,
+
+
+const TAGS = {
+  SPRING: {
+    name: "",
+    class: "bg-[#1a1a1a] text-white",
+    icon: Spring,
   },
-  TAILWIND: {
-    name: "Tailwind CSS",
-    class: "bg-[#003159] text-white",
-    icon: Tailwind,
+  JAVA: {
+    name: "",
+    class: "bg-[#1a1a1a] text-white",
+    icon: Java,
   },
+  JAVASCRIPT: {
+    name: "",
+    class: "bg-[#1a1a1a] text-black",
+    icon: Javascript,
+  },
+  ANGULAR: {
+    name: "",
+    class: "bg-[#1a1a1a] text-white",
+    icon: Angular,
+  },
+  BOOTSTRAP: {
+    name: "",
+    class: "bg-[#1a1a1a] text-white",
+    icon: Bootstrap,
+  },
+  CSS: {
+    name: "",
+    class: "bg-[#1a1a1a] text-white",
+    icon: Css,
+  },
+  HTML: {
+    name: "",
+    class: "bg-[#1a1a1a] text-white",
+    icon: Html,
+  },
+  DOCKER: {
+    name: "",
+    class: "bg-[#1a1a1a] text-white",
+    icon: Docker,
+  },
+  GOOGLE_CLOUD: {
+    name: "",
+    class: "bg-[#1a1a1a] text-white",
+    icon: GoogleCloud,
+  },
+  GRAFANA: {
+    name: "",
+    class: "bg-[#1a1a1a] text-white",
+    icon: Grafana,
+  },
+  JWT: {
+    name: "",
+    class: "bg-[#1a1a1a] text-white",
+    icon: Jwt,
+  },
+  MONGO: {
+    name: "",
+    class: "bg-[#1a1a1a] text-white",
+    icon: Mongo,
+  },
+  MYSQL: {
+    name: "",
+    class: "bg-[#1a1a1a] text-white",
+    icon: MySQL,
+  },
+  POSTGRE: {
+    name: "",
+    class: "bg-[#1a1a1a] text-white",
+    icon: Postgre,
+  },
+  SWAGGER: {
+    name: "",
+    class: "bg-[#1a1a1a] text-white",
+    icon: Swagger,
+  },
+  KEYCLOAK: {
+    name: "",
+    class: "bg-[#1a1a1a] text-white",
+    icon: Keycloak,
+  },
+  SPRINGCLOUD:{
+    name: "",
+    class: "bg-[#1a1a1a] text-white",
+    icon: SpringCloud,
+  },
+  NETFLIX:{
+    name: "",
+    class: "bg-[#1a1a1a] text-white",
+    icon: NetflixZuul,
+  },
+  SPRINGSECURITY:{
+    name: "",
+    class: "bg-[#1a1a1a] text-white",
+    icon: SpringSecurity,
+  }
 };
 
 const PROJECTS = [ 
@@ -26,7 +130,7 @@ const PROJECTS = [
     github: "https://github.com/Agslz/arreglalo-ya",
     image: "/projects/adventjs.webp",
     link:"",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.SPRING, TAGS.SPRINGSECURITY, TAGS.JAVA, TAGS.MYSQL, TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT, TAGS.BOOTSTRAP, TAGS.DOCKER],
   },
   {
     title: "BiblioNet",
@@ -34,7 +138,7 @@ const PROJECTS = [
       "Plataforma integral que permite gestionar colecciones de libros y conectar a lectores. Los usuarios pueden crear, actualizar, prestar y devolver libros, interactuar con sus bibliotecas personales y compartir sus experiencias de lectura en una comunidad.",
     github: "https://github.com/Agslz/biblio-net",
     image: "/projects/adventjs.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.SPRING, TAGS.JAVA, TAGS.POSTGRE, TAGS.JWT, TAGS.ANGULAR, TAGS.SWAGGER, TAGS.BOOTSTRAP, TAGS.DOCKER],
   },
   {
     title: "Java Microservicios",
@@ -42,7 +146,7 @@ const PROJECTS = [
       "Aplicación que gestiona usuarios utilizando OAuth2 y JWT para la autenticación. Incluye servidores de configuración con Spring Cloud, balanceo de carga, tolerancia a fallos con Resilience4J y rastreo distribuido con Spring Cloud Sleuth. Todo está preparado para automatización y despliegue en contenedores Docker.",
     github: "https://github.com/Agslz/java-microservices",
     image: "/projects/adventjs.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.SPRING, TAGS.SPRINGCLOUD, TAGS.JAVA, TAGS.JWT, TAGS.DOCKER, TAGS.KEYCLOAK, TAGS.NETFLIX, TAGS.GOOGLE_CLOUD],
   },
   {
     title: "Ecommerce Microservicios",
@@ -50,7 +154,7 @@ const PROJECTS = [
       "Aplicación de e-commerce desarrollada con microservicios y Docker para facilitar el despliegue. Implementa Keycloak para gestionar la autenticación de usuarios, Resilience4j para garantizar la tolerancia a fallos y Zipkin para el monitoreo de las solicitudes a través de los microservicios.",
     github: "https://github.com/Agslz/ecommerce-microservices",
     image: "/projects/adventjs.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.SPRING, TAGS.SPRINGCLOUD,                                                                                                                                                                                                                                                                                                                                                                                                      TAGS.JAVA, TAGS.DOCKER, TAGS.JWT, TAGS.SWAGGER, TAGS.KEYCLOAK],
   },
   {
     title: "Control de Clientes",
@@ -58,7 +162,7 @@ const PROJECTS = [
       "Aplicación corporativa diseñada para gestionar clientes con un sistema de Login que utiliza Spring Security y roles de usuario. Está internacionalizada en 4 idiomas, incluye un dashboard para ver saldos de clientes y es completamente responsiva, adaptándose a cualquier dispositivo.",
     github: "https://github.com/Agslz/customer-control-spring",
     image: "/projects/adventjs.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.SPRING, TAGS.SPRINGSECURITY, TAGS.JAVA, TAGS.MYSQL, TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT, TAGS.BOOTSTRAP],
   },
   {
     title: "Control de Inventario",
@@ -66,7 +170,7 @@ const PROJECTS = [
       "Sistema de control de inventario basado en MySQL, con servicios RESTful que devuelven datos en formato JSON. La autenticación se maneja a través de Keycloak en contenedores Docker, asegurando una capa de seguridad robusta. La aplicación ha sido desplegada exitosamente en Google Cloud Platform.",
     github: "https://github.com/Agslz/frontend-inventory-control",
     image: "/projects/adventjs.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.SPRING, TAGS.SPRINGSECURITY, TAGS.JAVA, TAGS.ANGULAR, TAGS.DOCKER, TAGS.KEYCLOAK, TAGS.GOOGLE_CLOUD],
   },
   {
     title: "Chat en tiempo real",
@@ -74,7 +178,7 @@ const PROJECTS = [
       "Aplicación de chat en tiempo real con una arquitectura modular. Utiliza websockets para la comunicación instantánea y está desarrollada con Spring Boot. El frontend es completamente responsive, y la aplicación está dockerizada para facilitar su despliegue en diferentes entornos.",
     github: "https://github.com/Agslz/springboot-realtime-chat",
     image: "/projects/adventjs.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.SPRING, TAGS.JAVA, TAGS.MONGO, TAGS.DOCKER, TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
   },
 ];
 
@@ -82,53 +186,54 @@ const PROJECTS = [
 
 <div class="flex flex-col gap-y-16">
   {
-    PROJECTS.map(({ image, title, description, tags, link, github }) => ( //link
-    <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
-  <div class="w-full md:w-1/2">
-    <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
-      <img alt="Recién llegado vs 5 años en Nueva Zelanda" class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
-    </div>
-  </div>
+    PROJECTS.map(({ image, title, description, tags, link, github }) => (
+      <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
+        <div class="w-full md:w-1/2">
+          <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
+            <img alt="Proyectos" class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
+          </div>
+        </div>
 
-  <div class="w-full md:w-1/2 md:max-w-lg">
-    <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">
-      {title}
-    </h3>
-    <div class="flex flex-wrap mt-2">
-      <ul class="flex flex-row mb-2 gap-x-2">
-          {tags.map((tag) => (
-            <li>
-              <span
-                class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
-              >
-                <tag.icon class="size-4" />
-                {tag.name}
-              </span>
-            </li>
-          ))}
-        </ul>
+        <div class="w-full md:w-1/2 md:max-w-lg">
+          <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">
+            {title}
+          </h3>
+          <div class="flex flex-wrap mt-2">
+            <ul class="flex flex-wrap mb-2 gap-x-2 gap-y-1">
+              {tags.map((tag) => (
+                <li>
+                  <span
+                    class={`flex items-center gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2`}
+                  >
+                    <tag.icon class="size-4" />
+                    {tag.name}
+                  </span>
+                </li>
+              ))}
+            </ul>
 
-      <div class="mt-2 text-gray-700 dark:text-gray-400">{description}</div>
-      <footer class="flex items-end justify-start mt-4 gap-x-4">
-          {github && (
-            <LinkButton href={github}>
-              <GitHub class="size-6" />
-              Code
-              
-            </LinkButton>
-          )}
-          {link && (
-            <LinkButton href={link}>
-              <Link class="size-4" />
-              Preview
-            </LinkButton>
-          )}
-        </footer>
-    </div>
-  </div>
-</article>
+            <div class="mt-2 text-gray-700 dark:text-gray-400">{description}</div>
+            <footer class="flex items-end justify-start mt-4 gap-x-4">
+              {github && (
+                <LinkButton href={github}>
+                  <GitHub class="size-6" />
+                  Code
+                </LinkButton>
+              )}
+              {link && (
+                <LinkButton href={link}>
+                  <Link class="size-4" />
+                  Preview
+                </LinkButton>
+              )}
+            </footer>
+          </div>
+        </div>
+      </article>
     ))
   }
+</div>
+</article>
 </div>
 
 

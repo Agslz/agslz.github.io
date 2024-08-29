@@ -1,0 +1,125 @@
+---
+import Spring from "./icons/Spring.astro";
+import Java from "./icons/Java.astro";
+import Javascript from "./icons/Javascript.astro";
+import Angular from "./icons/Angular.astro";
+import Css from "./icons/Css.astro";
+import Html from "./icons/Html.astro";
+import Docker from "./icons/Docker.astro";
+import Mongo from "./icons/Mongo.astro";
+import MySQL from "./icons/MySQL.astro";
+import Postgre from "./icons/Postgre.astro";
+import SpringCloud from "./icons/SpringCloud.astro"
+import SpringSecurity from "./icons/SpringSecurity.astro"
+/*import Bootstrap from "./icons/Bootstrap.astro";
+import GoogleCloud from "./icons/GoogleCloud.astro";
+import Grafana from "./icons/Grafana.astro";
+import Jwt from "./icons/Jwt.astro";
+import Swagger from "./icons/Swagger.astro";
+import Keycloak from "./icons/Keycloak.astro"
+import NetflixZuul from "./icons/NetflixZuul.astro"*/
+
+enum TechnologyType {
+  Frontend = 1,
+  Backend = 2,
+  Database = 3,
+  Other = 4,
+}
+
+const TECHNOLOGIES = [
+{
+    name: 'Spring Boot',
+    icon: Spring,
+    colorClasses: 'bg-blue-500 dark:bg-green-500/70',
+    type: TechnologyType.Backend
+  },
+  {
+    name: 'Spring Cloud',
+    icon: SpringCloud,
+    colorClasses: 'bg-pink-500 dark:bg-green-500/70',
+    type: TechnologyType.Database
+  },
+  {
+    name: 'Spring Security',
+    icon: SpringSecurity,
+    colorClasses: 'bg-pink-500 dark:bg-green-500/70',
+    type: TechnologyType.Database
+  }
+  ,
+  {
+    name: 'MongoDB',
+    icon: Mongo,
+    colorClasses: 'bg-blue-500 dark:bg-green-500/70',
+    type: TechnologyType.Database
+  },
+  ,
+  {
+    name: 'CSS',
+    icon: Css,
+    colorClasses: 'bg-blue-500 dark:bg-blue-500/70',
+    type: TechnologyType.Frontend
+  },
+  {
+    name: 'MySQL',
+    icon: MySQL,
+    colorClasses: 'bg-blue-500 dark:bg-blue-500/70',
+    type: TechnologyType.Database
+  },
+  
+  {
+    name: 'Docker',
+    icon: Docker,
+    colorClasses: 'bg-yellow-500 dark:bg-blue-500/70',
+    type: TechnologyType.Frontend
+  },
+  {
+    name: 'PostgreSQL',
+    icon: Postgre,
+    colorClasses: 'bg-blue-500 dark:bg-blue-500/70',
+    type: TechnologyType.Database
+  },
+  {
+    name: 'Java',
+    icon: Java,
+    colorClasses: 'bg-pink-500 dark:bg-orange-600/70',
+    type: TechnologyType.Backend
+  }
+  ,
+  {
+    name: 'HTML',
+    icon: Html,
+    colorClasses: 'bg-orange-600 dark:bg-orange-600/70',
+    type: TechnologyType.Frontend
+  },
+  {
+    name: 'Angular',
+    icon: Angular,
+    colorClasses: 'bg-blue-500 dark:bg-pink-500/70',
+    type: TechnologyType.Frontend
+  },
+  ,
+  {
+    name: 'JavaScript',
+    icon: Javascript,
+    colorClasses: 'bg-yellow-500 dark:bg-yellow-500/70',
+    type: TechnologyType.Frontend
+  }
+];
+---
+
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    {TECHNOLOGIES.map((technology) => {
+      const Icon = technology!.icon; // Asigna el icono a una variable local
+      return (
+        <div
+          class={`flex flex-col items-center justify-center p-4 transition-all duration-300 ${technology!.colorClasses} hover:scale-105 rounded-lg shadow-md`}
+        >
+          <Icon className="size-12" /> {/* Usa la variable Icon */}
+          <span class="mt-2 text-sm font-semibold text-white">
+            {technology!.name}
+          </span>
+        </div>
+      );
+    })}
+  </div>
+  

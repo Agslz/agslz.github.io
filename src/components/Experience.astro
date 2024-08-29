@@ -1,4 +1,5 @@
 ---
+import { literal } from "astro/zod"
 import ExperienceItem from "./ExperienceItem.astro"
 const EXPERIENCE = [
   {
@@ -7,7 +8,7 @@ const EXPERIENCE = [
     company: "Municipalidad de Capital de Mendoza",
     description:
       "Trabajo como desarrollador Full Stack para el área de Desarrollo y Sistemas, donde utilizo Java y Spring Boot de manera experta en mis responsabilidades como programador, también utilizamos React, NodeJS, MySQL, MongoDB y Linux. Esta experiencia me brindó la oportunidad de fortalecer y enriquecer mis habilidades en Java y Spring Boot, contribuyendo significativamente a mi desarrollo profesional en el campo de la programación.",
-    //link: "Link sobre el trabajo",
+    link: "https://ciudaddemendoza.gob.ar/secretaria-de-gestion-publica/informatica-y-comunicaciones/",
   },
   {
     date: "Enero 2022 - Abril 2023",
@@ -15,6 +16,7 @@ const EXPERIENCE = [
     company: "Egg Cooperation",
     description:
       "Formar parte de las tutorías me permitieron desarrollar mis Softskills y entender la importancia de la cooperación. Poder contribuir a la comunidad Egg como maestro fue muy satisfactorio. Este rol surgió a raíz de mis previos conocimientos en programación y mi desempeño durante el cursado. Encontré un espacio de auto conocimiento y de ayuda para con mis pares.",
+    link: "https://site.egg.live/es-ar/"
   },
   {
     date: "Mayo 2022 - Diciembre 2022",
@@ -22,6 +24,7 @@ const EXPERIENCE = [
     company: "LabsXD",
     description:
       "Desarrollador Trainee en LabsXD, con experiencia en el manejo de tecnologías de Salesforce y sus complementos. También participé en proyectos de Frontend, lo que me permitió ampliar mis conocimientos en desarrollo web y en la integración de soluciones tecnológicas.",
+    link:"https://labsxd.com/"
   },
 ]
 ---

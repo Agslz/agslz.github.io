@@ -1,5 +1,8 @@
-import { literal } from "astro/zod"
-import ExperienceItem from "./ExperienceItem.astro"
+---
+import { literal } from "astro/zod";
+import ExperienceItem from "./ExperienceItem.astro";
+---
+
 const EXPERIENCE = [
   {
     date: "Enero 2025 - Actual",
@@ -23,16 +26,14 @@ const EXPERIENCE = [
     company: "Egg Cooperation",
     description:
       "Ser tutor en la comunidad Egg me permitió fortalecer mis habilidades blandas y comprender la importancia de la cooperación y el trabajo en equipo. Como maestro en este bootcamp de programación, ayudé a los alumnos a superar dificultades en Java, Spring Boot, Spring MVC, y principios de POO, así como en tecnologías frontend como HTML, CSS, JavaScript, Bootstrap, y React. Este rol me brindó la oportunidad de consolidar mis conocimientos técnicos mientras desarrollaba mis capacidades de liderazgo y enseñanza.",
-    link: "https://site.egg.live/es-ar/"
+    link: "https://site.egg.live/es-ar/",
   }
-]
+];
 
 <ol class="relative mt-16">
-  {
-    EXPERIENCE.map((experience) => (
-      <li class="">
-        <ExperienceItem {...experience} />
-      </li>
-    ))
-  }
+  {EXPERIENCE.map((experience) => (
+    <li key={experience.date}>
+      <ExperienceItem {...experience} />
+    </li>
+  ))}
 </ol>
